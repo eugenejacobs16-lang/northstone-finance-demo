@@ -1210,7 +1210,20 @@
   object-fit: cover !important;
   object-position: center center !important;
 }
-    
+    /* Contact section positioning */
+@media (min-width: 960px) {
+  #contact {
+    padding-top: 42px;
+    padding-bottom: 68px;
+    scroll-margin-top: 96px;
+  }
+}
+
+#solutions,
+#packages,
+#contact {
+  scroll-margin-top: 40px;
+}
   </style>
 </head>
 
@@ -1343,7 +1356,7 @@
 
     <section id="solutions">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head"  id="solutions">
           <div class="eyebrow">Finance solutions</div>
 
           <h2>Support shaped around where your business is now.</h2>
@@ -1513,7 +1526,7 @@
 
     <section id="packages">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" id="packages">
           <div class="eyebrow">Monthly packages</div>
 
           <h2>Start with the level of support that fits.</h2>
@@ -1647,7 +1660,7 @@
 
     <section id="contact">
       <div class="container">
-        <div class="contact-card">
+        <div class="contact-card" id="contact">
           <div class="eyebrow light">Ready for more clarity?</div>
 
           <h2>Let’s talk about your business.</h2>
