@@ -1771,7 +1771,26 @@
               autocomplete="organization"
             >
           </div>
+<div
+  aria-hidden="true"
+  style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;"
+>
+  <label for="website">Website</label>
 
+  <input
+    id="website"
+    name="website"
+    tabindex="-1"
+    autocomplete="off"
+  >
+</div>
+
+<p
+  id="form-error"
+  role="alert"
+  hidden
+  style="color:#b42318;font-weight:700;margin:0 0 16px;"
+></p>
           <div class="form-actions">
             <button type="button" class="btn btn-primary" id="next-step">
               Continue →
@@ -1810,7 +1829,7 @@
               Back
             </button>
 
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary" id="submit-enquiry">
               Send enquiry
             </button>
           </div>
@@ -1823,9 +1842,9 @@
         <h3>Your enquiry is ready.</h3>
 
         <p>
-          This design preview does not send live enquiries yet. The production
-          form endpoint will be connected before launch.
-        </p>
+  Thank you. Your enquiry has been sent successfully.
+  Northstone Finance will contact you as soon as possible.
+</p>
 
         <button class="btn btn-primary close-success">Done</button>
       </div>
@@ -1921,17 +1940,66 @@
       showStep(1);
     });
 
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
+    form.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-      if (!form.reportValidity()) {
-        return;
-      }
+  if (!form.reportValidity()) {
+    return;
+  }
 
-      form.style.display = "none";
-      document.querySelector(".progress").style.display = "none";
-      document.querySelector(".success").classList.add("show");
+  const submitButton =
+    document.querySelector("#submit-enquiry");
+
+  const errorMessage =
+    document.querySelector("#form-error");
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending…";
+
+  errorMessage.hidden = true;
+  errorMessage.textContent = "";
+
+  const formData = new FormData(form);
+  const enquiry = Object.fromEntries(formData.entries());
+
+  try {
+    const response = await fetch("/api/enquiry", {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify(enquiry)
     });
+
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok) {
+      throw new Error(
+        result.error ||
+        "We could not send your enquiry. Please try again."
+      );
+    }
+
+    form.style.display = "none";
+
+    document.querySelector(".progress").style.display =
+      "none";
+
+    document
+      .querySelector(".success")
+      .classList.add("show");
+
+    form.reset();
+  } catch (error) {
+    errorMessage.textContent = error.message;
+    errorMessage.hidden = false;
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Send enquiry";
+  }
+});
   </script>
 </body>
 </html>
