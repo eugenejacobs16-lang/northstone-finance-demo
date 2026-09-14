@@ -2,72 +2,1936 @@
 <html lang="en-ZA">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="Practical bookkeeping, reporting, forecasting and financial management support for South African startups, SMEs and growing businesses.">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+  <meta
+    name="description"
+    content="Practical bookkeeping, reporting, forecasting and financial management support for South African startups, SMEs and growing businesses."
+  >
+
   <title>Northstone Finance Advisory | Clarity for growing businesses</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101b2d'/%3E%3Cpath d='M15 46V18h7l20 19V18h7v28h-7L22 27v19z' fill='white'/%3E%3Cpath d='M15 51h34' stroke='%23d42d33' stroke-width='5'/%3E%3C/svg%3E">
+
   <style>
-    :root{--ink:#101b2d;--ink-2:#1a2a43;--red:#c92631;--red-dark:#a91822;--cream:#f5f4ef;--paper:#fff;--muted:#5d6a7c;--line:#dfe3e8;--soft:#f6f8fa;--green:#1f7a52;--radius:20px;--shadow:0 18px 50px rgba(16,27,45,.1);--max:1180px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.55}body.menu-open,body.modal-open{overflow:hidden}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.container{width:min(calc(100% - 40px),var(--max));margin:auto}.skip{position:fixed;left:16px;top:-70px;z-index:99;background:#fff;padding:12px 18px;border-radius:10px}.skip:focus{top:14px}
-    .utility{display:none}.header{height:72px;position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(16,27,45,.08)}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;min-width:0}.brand img{display:block;width:155px;height:48px;object-fit:contain;object-position:left center}.nav-desktop{display:none}.menu-btn{display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink)}.menu-btn svg{width:22px}.drawer{position:fixed;inset:72px 0 0;z-index:40;background:#fff;transform:translateX(100%);transition:transform .28s ease;display:flex;flex-direction:column;padding:24px 20px calc(24px + env(safe-area-inset-bottom))}.drawer.open{transform:none}.drawer a{display:flex;justify-content:space-between;align-items:center;min-height:58px;border-bottom:1px solid var(--line);font-size:1.1rem;font-weight:650}.drawer .drawer-cta{margin-top:24px;border:0;justify-content:center;color:#fff;background:var(--red);border-radius:14px}.drawer-contact{margin-top:auto;color:var(--muted);font-size:.9rem}.drawer-contact a{min-height:44px;font-size:.95rem;border:0;justify-content:flex-start}
-    .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:54px 0 40px}.hero:after{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(255,255,255,.09);border-radius:50%;right:-210px;top:-90px;box-shadow:0 0 0 65px rgba(255,255,255,.025),0 0 0 130px rgba(255,255,255,.018)}.hero-inner{position:relative;z-index:1}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--red);font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;font-weight:800}.eyebrow.light{color:#f6a1a6}.eyebrow:before{content:"";width:28px;height:2px;background:currentColor}.hero h1{font-size:clamp(2.45rem,11vw,4.75rem);line-height:.98;letter-spacing:-.055em;max-width:760px;margin:22px 0}.hero h1 span{color:#f29aa0}.hero-copy{max-width:670px;font-size:1.06rem;color:#d8dfeb;margin:0}.hero-actions{display:grid;gap:12px;margin-top:30px}.btn{min-height:54px;border-radius:14px;border:1px solid transparent;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:750;transition:.2s ease}.btn-primary{background:var(--red);color:#fff}.btn-primary:hover{background:var(--red-dark);transform:translateY(-1px)}.btn-secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}.btn-light{background:#fff;border-color:var(--line);color:var(--ink)}.hero-meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:28px;color:#b9c3d2;font-size:.84rem}.hero-meta span{display:flex;align-items:center;gap:8px}.hero-meta i{width:7px;height:7px;border-radius:50%;background:#64c694}.insight-card{display:none}
-    section{padding:72px 0}.section-head{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}.section-head h2{font-size:clamp(2rem,8vw,3.35rem);line-height:1.05;letter-spacing:-.045em;margin:0;max-width:690px}.section-head p{margin:0;color:var(--muted);max-width:650px}.services{background:#fff}.service-track{display:flex;gap:15px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-20px;padding:2px 20px 18px;scrollbar-width:none}.service-track::-webkit-scrollbar{display:none}.service-card{scroll-snap-align:start;flex:0 0 86%;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;min-height:300px;background:#fff;display:flex;flex-direction:column;transition:.2s ease}.service-card:hover{border-color:#bdc5cf;transform:translateY(-3px);box-shadow:var(--shadow)}.service-num{font-size:.8rem;color:var(--red);font-weight:800}.service-card h3{font-size:1.55rem;line-height:1.12;letter-spacing:-.03em;margin:46px 0 12px}.service-card p{color:var(--muted);margin:0}.service-card ul{padding-left:18px;color:var(--muted);margin:17px 0 0}.service-card li{margin:6px 0}.service-link{margin-top:auto;padding-top:22px;color:var(--red);font-weight:750}.swipe-note{color:var(--muted);font-size:.82rem;margin-top:2px}
-    .why{background:var(--cream)}.why-grid{display:grid;gap:34px}.why-copy h2{font-size:clamp(2rem,8vw,3.5rem);line-height:1.05;letter-spacing:-.045em;margin:18px 0}.why-copy p{color:var(--muted)}.benefits{display:grid;gap:12px}.benefit{background:#fff;border-radius:16px;padding:20px;display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start}.benefit-icon{width:42px;height:42px;border-radius:12px;background:#fbecee;color:var(--red);display:grid;place-items:center;font-weight:800}.benefit h3{font-size:1rem;margin:0 0 5px}.benefit p{font-size:.92rem;color:var(--muted);margin:0}
-    .process{background:var(--ink);color:#fff}.process .section-head p{color:#bdc7d7}.steps{display:grid;gap:14px}.step{position:relative;padding:25px;border:1px solid rgba(255,255,255,.13);border-radius:18px;background:rgba(255,255,255,.035)}.step-num{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red);font-weight:800;margin-bottom:32px}.step h3{font-size:1.25rem;margin:0 0 8px}.step p{color:#bdc7d7;margin:0}
-    .packages{background:#fff}.package-grid{display:grid;gap:15px}.package{position:relative;border:1px solid var(--line);border-radius:var(--radius);padding:25px;background:#fff}.package.featured{border:2px solid var(--red)}.popular{position:absolute;right:18px;top:18px;padding:6px 10px;border-radius:999px;background:#fbecee;color:var(--red);font-size:.72rem;font-weight:800;text-transform:uppercase}.package h3{font-size:1.3rem;margin:0}.package .best{color:var(--muted);font-size:.87rem}.price{font-size:1.8rem;letter-spacing:-.04em;font-weight:800;margin:18px 0}.price small{font-size:.8rem;font-weight:500;color:var(--muted)}.package ul{padding-left:20px;color:var(--muted);min-height:0}.package li{margin:7px 0}.package .btn{width:100%;margin-top:12px;color:var(--ink);border-color:var(--line);background:var(--soft)}.package.featured .btn{background:var(--red);color:#fff;border-color:var(--red)}
-    .trust{background:var(--soft)}.trust-grid{display:grid;gap:30px}.trust h2{font-size:clamp(2rem,8vw,3.25rem);line-height:1.06;letter-spacing:-.045em;margin:18px 0}.trust p{color:var(--muted)}.trust-panel{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}.trust-item{background:#fff;padding:22px}.trust-item strong{display:block;margin-bottom:5px}.trust-item span{color:var(--muted);font-size:.9rem}
-    .contact{background:#fff}.contact-card{background:var(--ink);color:#fff;border-radius:26px;padding:30px 24px;overflow:hidden;position:relative}.contact-card h2{font-size:clamp(2rem,9vw,3.6rem);line-height:1.03;letter-spacing:-.05em;margin:18px 0}.contact-card p{color:#bdc7d7;max-width:630px}.contact-actions{display:grid;gap:11px;margin-top:27px}.contact-details{display:grid;gap:12px;margin-top:30px;color:#d9e0ea}.contact-details a{min-height:44px;display:flex;align-items:center;gap:10px}
-    footer{background:#0a1220;color:#d7deea;padding:52px 0 110px}.footer-grid{display:grid;gap:32px}.footer-brand img{width:175px;height:54px;object-fit:contain;object-position:left;background:#fff;border-radius:8px;padding:4px}.footer-brand p{font-size:.9rem;color:#aeb9c9;max-width:420px}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:28px}.footer-links strong{display:block;color:#fff;margin-bottom:11px}.footer-links a{display:block;color:#aeb9c9;padding:5px 0;font-size:.9rem}.legal{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;color:#8f9bad;font-size:.78rem}.mobile-bar{position:fixed;z-index:29;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));height:64px;background:rgba(16,27,45,.97);box-shadow:0 16px 45px rgba(0,0,0,.27);border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:7px;display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:5px}.mobile-bar a,.mobile-bar button{border:0;background:transparent;color:#fff;border-radius:12px;display:grid;place-items:center;font-size:.8rem;font-weight:750}.mobile-bar .accent{background:var(--red)}
-    .modal{position:fixed;inset:0;z-index:60;background:rgba(6,12,22,.64);display:none;align-items:flex-end}.modal.open{display:flex}.modal-sheet{width:100%;max-height:94vh;overflow:auto;background:#fff;border-radius:26px 26px 0 0;padding:24px 20px calc(28px + env(safe-area-inset-bottom))}.modal-head{display:flex;justify-content:space-between;align-items:start;gap:20px}.modal-head h2{font-size:1.6rem;line-height:1.1;margin:6px 0}.close{border:1px solid var(--line);background:#fff;width:44px;height:44px;border-radius:13px;font-size:1.4rem}.progress{height:5px;border-radius:99px;background:#e7eaf0;margin:22px 0}.progress span{display:block;height:100%;width:50%;background:var(--red);border-radius:inherit;transition:.2s}.form-step{display:none}.form-step.active{display:block}.field{margin-bottom:18px}.field label{display:block;font-weight:700;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;min-height:52px;border:1px solid #c9d0d9;border-radius:12px;padding:12px 14px;background:#fff;color:var(--ink)}.field textarea{min-height:110px;resize:vertical}.field-note{font-size:.8rem;color:var(--muted);margin-top:6px}.form-actions{display:flex;gap:10px;margin-top:24px}.form-actions .btn{flex:1}.success{display:none;text-align:center;padding:30px 0}.success.show{display:block}.success-mark{width:64px;height:64px;border-radius:50%;background:#e8f5ee;color:var(--green);display:grid;place-items:center;font-size:1.8rem;margin:auto}.success h3{font-size:1.6rem;margin:18px 0 8px}.success p{color:var(--muted)}
-    @media(min-width:700px){.container{width:min(calc(100% - 64px),var(--max))}.hero{padding:76px 0 62px}.hero-actions{display:flex}.hero .btn{min-width:175px}.service-track{margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}.service-card{min-width:0;min-height:365px}.swipe-note{display:none}.why-grid,.trust-grid{grid-template-columns:1fr 1fr;align-items:center}.steps{grid-template-columns:repeat(3,1fr)}.package-grid{grid-template-columns:repeat(2,1fr)}.contact-card{padding:50px}.contact-actions{display:flex}.contact-actions .btn{min-width:180px}.footer-grid{grid-template-columns:1.2fr .8fr}.modal{align-items:center;justify-content:center}.modal-sheet{max-width:620px;border-radius:26px;padding:30px;max-height:90vh}}
-    @media(min-width:960px){.utility{display:block;background:#0a1220;color:#cbd4e1;font-size:.78rem}.utility-inner{height:34px;display:flex;justify-content:flex-end;align-items:center;gap:24px}.header{top:0;height:78px}.menu-btn{display:none}.nav-desktop{display:flex;align-items:center;gap:28px;font-size:.9rem;font-weight:700}.nav-desktop a:hover{color:var(--red)}.nav-desktop .nav-cta{color:#fff;background:var(--red);padding:12px 18px;border-radius:11px}.drawer{display:none}.hero{padding:92px 0}.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}.insight-card{display:block;background:#fff;color:var(--ink);border-radius:24px;padding:24px;box-shadow:0 28px 70px rgba(0,0,0,.27);transform:rotate(1.5deg)}.insight-top{display:flex;justify-content:space-between;align-items:center}.insight-top span{font-size:.8rem;color:var(--muted)}.chart{height:145px;margin:23px 0 12px;display:flex;align-items:flex-end;gap:10px;border-bottom:1px solid var(--line)}.chart i{display:block;flex:1;background:#dce2e9;border-radius:7px 7px 0 0}.chart i:nth-child(4),.chart i:nth-child(5){background:var(--red)}.insight-row{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:14px;font-size:.84rem}.insight-row strong{color:var(--green)}section{padding:100px 0}.why-grid{gap:90px}.package-grid{grid-template-columns:repeat(4,1fr);align-items:start}.package{padding:24px 20px}.trust-grid{gap:90px}.mobile-bar{display:none}footer{padding-bottom:48px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+    :root {
+      --ink: #101b2d;
+      --red: #c92631;
+      --red-dark: #a91822;
+      --cream: #f5f4ef;
+      --paper: #ffffff;
+      --soft: #f6f8fa;
+      --muted: #5d6a7c;
+      --line: #dfe3e8;
+      --green: #1f7a52;
+      --radius: 20px;
+      --shadow: 0 18px 50px rgba(16, 27, 45, 0.1);
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    body.menu-open,
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: auto;
+    }
+
+    .skip {
+      position: fixed;
+      top: -70px;
+      left: 16px;
+      z-index: 100;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: white;
+    }
+
+    .skip:focus {
+      top: 14px;
+    }
+
+    /* Header */
+
+    .utility {
+      display: none;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      height: 84px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(16, 27, 45, 0.08);
+    }
+
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .brand img {
+      display: block;
+      width: 200px;
+      height: 62px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    .nav-desktop {
+      display: none;
+    }
+
+    .menu-btn {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: white;
+      color: var(--ink);
+    }
+
+    .menu-btn svg {
+      width: 22px;
+    }
+
+    /* Mobile drawer */
+
+    .drawer {
+      position: fixed;
+      inset: 84px 0 0;
+      z-index: 40;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 20px calc(24px + env(safe-area-inset-bottom));
+      background: white;
+      transform: translateX(100%);
+      transition: transform 0.28s ease;
+    }
+
+    .drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 58px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.1rem;
+      font-weight: 650;
+    }
+
+    .drawer-cta {
+      width: 100%;
+      margin-top: 24px;
+    }
+
+    .drawer-contact {
+      margin-top: auto;
+      color: var(--muted);
+    }
+
+    .drawer-contact a {
+      min-height: 44px;
+      border: 0;
+      font-size: 0.95rem;
+      justify-content: flex-start;
+    }
+
+    /* Shared elements */
+
+    section {
+      padding: 72px 0;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--red);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 28px;
+      height: 2px;
+      background: currentColor;
+      content: "";
+    }
+
+    .eyebrow.light {
+      color: #f6a1a6;
+    }
+
+    .section-head {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      max-width: 700px;
+      margin: 0;
+      font-size: clamp(2rem, 8vw, 3.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .section-head p {
+      max-width: 650px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .btn {
+      min-height: 54px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 22px;
+      border: 1px solid transparent;
+      border-radius: 14px;
+      font-weight: 750;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--red-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      border-color: rgba(255, 255, 255, 0.35);
+      background: transparent;
+      color: white;
+    }
+
+    .btn-light {
+      border-color: var(--line);
+      background: white;
+      color: var(--ink);
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 54px 0 44px;
+      background: var(--ink);
+      color: white;
+    }
+
+    .hero::after {
+      position: absolute;
+      top: -90px;
+      right: -210px;
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 65px rgba(255, 255, 255, 0.025),
+        0 0 0 130px rgba(255, 255, 255, 0.018);
+      content: "";
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 22px 0;
+      font-size: clamp(2.45rem, 11vw, 4.75rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      color: #f29aa0;
+    }
+
+    .hero-copy {
+      max-width: 670px;
+      margin: 0;
+      color: #d8dfeb;
+      font-size: 1.06rem;
+    }
+
+    .hero-actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 28px;
+      color: #b9c3d2;
+      font-size: 0.84rem;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-meta i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #64c694;
+    }
+
+    .insight-card {
+      display: none;
+    }
+
+    /* Services */
+
+    .service-track {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      margin-inline: -20px;
+      padding: 2px 20px 18px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+
+    .service-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .service-card {
+      flex: 0 0 86%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      padding: 26px 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: white;
+      scroll-snap-align: start;
+      transition: 0.2s ease;
+    }
+
+    .service-card:hover {
+      border-color: #bdc5cf;
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .service-num {
+      color: var(--red);
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .service-card h3 {
+      margin: 46px 0 12px;
+      font-size: 1.55rem;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+    }
+
+    .service-card p,
+    .service-card ul {
+      color: var(--muted);
+    }
+
+    .service-card ul {
+      margin: 17px 0 0;
+      padding-left: 18px;
+    }
+
+    .service-card li {
+      margin: 6px 0;
+    }
+
+    .service-link {
+      margin-top: auto;
+      padding-top: 22px;
+      color: var(--red);
+      font-weight: 750;
+    }
+
+    .swipe-note {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    /* Why Northstone */
+
+    .why {
+      background: var(--cream);
+    }
+
+    .why-grid {
+      display: grid;
+      gap: 34px;
+    }
+
+    .why-copy h2,
+    .trust h2 {
+      margin: 18px 0;
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .why-copy p,
+    .trust p {
+      color: var(--muted);
+    }
+
+    .benefits {
+      display: grid;
+      gap: 12px;
+    }
+
+    .benefit {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      padding: 20px;
+      border-radius: 16px;
+      background: white;
+    }
+
+    .benefit-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #fbecee;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .benefit h3 {
+      margin: 0 0 5px;
+      font-size: 1rem;
+    }
+
+    .benefit p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Process */
+
+    .process {
+      background: var(--ink);
+      color: white;
+    }
+
+    .process .section-head p {
+      color: #bdc7d7;
+    }
+
+    .steps {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      padding: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .step-num {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 32px;
+      border-radius: 50%;
+      background: var(--red);
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .step p {
+      margin: 0;
+      color: #bdc7d7;
+    }
+
+    /* Packages */
+
+    .package-grid {
+      display: grid;
+      gap: 15px;
+    }
+
+    .package {
+      position: relative;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: white;
+    }
+
+    .package.featured {
+      border: 2px solid var(--red);
+    }
+
+    .popular {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #fbecee;
+      color: var(--red);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .package h3 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .package .best {
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .price {
+      margin: 18px 0;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .package ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .package li {
+      margin: 7px 0;
+    }
+
+    .package .btn {
+      width: 100%;
+      margin-top: 12px;
+      border-color: var(--line);
+      background: var(--soft);
+      color: var(--ink);
+    }
+
+    .package.featured .btn {
+      border-color: var(--red);
+      background: var(--red);
+      color: white;
+    }
+
+    /* Trust */
+
+    .trust {
+      background: var(--soft);
+    }
+
+    .trust-grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    .trust-panel {
+      display: grid;
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--line);
+    }
+
+    .trust-item {
+      padding: 22px;
+      background: white;
+    }
+
+    .trust-item strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .trust-item span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Contact */
+
+    .contact-card {
+      overflow: hidden;
+      position: relative;
+      padding: 30px 24px;
+      border-radius: 26px;
+      background: var(--ink);
+      color: white;
+    }
+
+    .contact-card h2 {
+      margin: 18px 0;
+      font-size: clamp(2rem, 9vw, 3.6rem);
+      line-height: 1.03;
+      letter-spacing: -0.05em;
+    }
+
+    .contact-card p {
+      max-width: 630px;
+      color: #bdc7d7;
+    }
+
+    .contact-actions,
+    .contact-details {
+      display: grid;
+      gap: 11px;
+      margin-top: 27px;
+    }
+
+    .contact-details {
+      color: #d9e0ea;
+    }
+
+    .contact-details a {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 52px 0 110px;
+      background: #0a1220;
+      color: #d7deea;
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 32px;
+    }
+
+    .footer-brand img {
+      width: 210px;
+      height: 66px;
+      object-fit: contain;
+      object-position: left center;
+      padding: 4px;
+      border-radius: 8px;
+      background: white;
+    }
+
+    .footer-brand p {
+      max-width: 420px;
+      color: #aeb9c9;
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .footer-links strong {
+      display: block;
+      margin-bottom: 11px;
+      color: white;
+    }
+
+    .footer-links a {
+      display: block;
+      padding: 5px 0;
+      color: #aeb9c9;
+      font-size: 0.9rem;
+    }
+
+    .legal {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: #8f9bad;
+      font-size: 0.78rem;
+    }
+
+    /* Mobile contact bar */
+
+    .mobile-bar {
+      position: fixed;
+      right: 10px;
+      bottom: calc(10px + env(safe-area-inset-bottom));
+      left: 10px;
+      z-index: 29;
+      height: 64px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.35fr;
+      gap: 5px;
+      padding: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 18px;
+      background: rgba(16, 27, 45, 0.97);
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.27);
+    }
+
+    .mobile-bar a,
+    .mobile-bar button {
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 12px;
+      background: transparent;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .mobile-bar .accent {
+      background: var(--red);
+    }
+
+    /* Enquiry modal */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      display: none;
+      align-items: flex-end;
+      background: rgba(6, 12, 22, 0.64);
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-sheet {
+      width: 100%;
+      max-height: 94vh;
+      overflow: auto;
+      padding: 24px 20px calc(28px + env(safe-area-inset-bottom));
+      border-radius: 26px 26px 0 0;
+      background: white;
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .modal-head h2 {
+      margin: 6px 0;
+      font-size: 1.6rem;
+      line-height: 1.1;
+    }
+
+    .close {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: white;
+      font-size: 1.4rem;
+    }
+
+    .progress {
+      height: 5px;
+      margin: 22px 0;
+      border-radius: 99px;
+      background: #e7eaf0;
+    }
+
+    .progress span {
+      display: block;
+      width: 50%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--red);
+      transition: width 0.2s;
+    }
+
+    .form-step {
+      display: none;
+    }
+
+    .form-step.active {
+      display: block;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      min-height: 52px;
+      padding: 12px 14px;
+      border: 1px solid #c9d0d9;
+      border-radius: 12px;
+      background: white;
+      color: var(--ink);
+    }
+
+    .field textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .field-note {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .form-actions .btn {
+      flex: 1;
+    }
+
+    .success {
+      display: none;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .success.show {
+      display: block;
+    }
+
+    .success-mark {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      margin: auto;
+      border-radius: 50%;
+      background: #e8f5ee;
+      color: var(--green);
+      font-size: 1.8rem;
+    }
+
+    /* Tablet */
+
+    @media (min-width: 700px) {
+      .container {
+        width: min(calc(100% - 64px), var(--max-width));
+      }
+
+      .hero {
+        padding: 76px 0 62px;
+      }
+
+      .hero-actions,
+      .contact-actions {
+        display: flex;
+      }
+
+      .service-track {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+      }
+
+      .service-card {
+        min-width: 0;
+        min-height: 365px;
+      }
+
+      .swipe-note {
+        display: none;
+      }
+
+      .why-grid,
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+
+      .steps {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-card {
+        padding: 50px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+
+      .modal {
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-sheet {
+        max-width: 620px;
+        max-height: 90vh;
+        padding: 30px;
+        border-radius: 26px;
+      }
+    }
+
+    /* Desktop */
+
+    @media (min-width: 960px) {
+      .utility {
+        display: block;
+        background: #0a1220;
+        color: #cbd4e1;
+        font-size: 0.78rem;
+      }
+
+      .utility-inner {
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 24px;
+      }
+
+      .header {
+        height: 92px;
+      }
+
+      .brand img {
+        width: 230px;
+        height: 70px;
+      }
+
+      .menu-btn,
+      .drawer {
+        display: none;
+      }
+
+      .nav-desktop {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .nav-desktop a:hover {
+        color: var(--red);
+      }
+
+      .nav-desktop .nav-cta {
+        padding: 12px 18px;
+        border-radius: 11px;
+        background: var(--red);
+        color: white;
+      }
+
+      .hero {
+        padding: 92px 0;
+      }
+
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: center;
+        gap: 72px;
+      }
+
+      .insight-card {
+        display: block;
+        padding: 24px;
+        border-radius: 24px;
+        background: white;
+        color: var(--ink);
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.27);
+        transform: rotate(1.5deg);
+      }
+
+      .insight-top,
+      .insight-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .insight-top span {
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      .chart {
+        height: 145px;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        margin: 23px 0 12px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .chart i {
+        flex: 1;
+        display: block;
+        border-radius: 7px 7px 0 0;
+        background: #dce2e9;
+      }
+
+      .chart i:nth-child(4),
+      .chart i:nth-child(5) {
+        background: var(--red);
+      }
+
+      .insight-row {
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+        font-size: 0.84rem;
+      }
+
+      .insight-row strong {
+        color: var(--green);
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      .why-grid,
+      .trust-grid {
+        gap: 90px;
+      }
+
+      .package-grid {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: start;
+      }
+
+      .mobile-bar {
+        display: none;
+      }
+
+      footer {
+        padding-bottom: 48px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+/* =========================================
+   NORTHSTONE LOGO – CORRECTED SIZE
+   ========================================= */
+
+/* Mobile */
+.header {
+  height: 84px;
+}
+
+.brand {
+  position: relative;
+  flex: 0 0 220px;
+  width: 220px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.brand img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px !important;
+  height: auto !important;
+  max-width: none !important;
+  transform: translate(-50%, -50%);
+}
+
+.drawer {
+  inset: 84px 0 0;
+}
+
+/* Very small phones */
+@media (max-width: 374px) {
+  .brand {
+    flex-basis: 190px;
+    width: 190px;
+  }
+
+  .brand img {
+    width: 270px !important;
+  }
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+  .header {
+    height: 96px;
+  }
+
+  .brand {
+    flex-basis: 260px;
+    width: 260px;
+    height: 82px;
+  }
+
+  .brand img {
+    width: 340px !important;
+  }
+}
+/* Keep sticky header white so logo background remains invisible */
+.header {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Footer logo – crop blank space and enlarge visible branding */
+.footer-brand img {
+  display: block;
+  width: 320px !important;
+  max-width: 100% !important;
+  height: 96px !important;
+  padding: 0 !important;
+  border-radius: 12px;
+  background: #ffffff;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+    
   </style>
 </head>
+
 <body>
   <a class="skip" href="#main">Skip to main content</a>
-  <div class="utility"><div class="container utility-inner"><a href="tel:+27731080298">073 108 0298</a><a href="mailto:info@northstonefinance.co.za">info@northstonefinance.co.za</a><span>Cape Town, South Africa</span></div></div>
+
+  <div class="utility">
+    <div class="container utility-inner">
+      <a href="tel:+27731080298">073 108 0298</a>
+      <a href="mailto:info@northstonefinance.co.za">
+        info@northstonefinance.co.za
+      </a>
+      <span>Cape Town, South Africa</span>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Northstone Finance Advisory home"><img src="logo.png" alt="Northstone Finance Advisory" width="155" height="48"></a>
-      <nav class="nav-desktop" aria-label="Primary navigation"><a href="#solutions">Solutions</a><a href="#packages">Packages</a><a href="#why">Why Northstone</a><a href="#contact">Contact</a><button class="btn nav-cta" data-open-enquiry>Get started</button></nav>
-      <button class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <a class="brand" href="#top" aria-label="Northstone Finance Advisory home">
+        <img
+          src="logo.png"
+          alt="Northstone Finance Advisory"
+          width="200"
+          height="62"
+        >
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <a href="#solutions">Solutions</a>
+        <a href="#packages">Packages</a>
+        <a href="#why">Why Northstone</a>
+        <a href="#contact">Contact</a>
+        <button class="btn nav-cta" data-open-enquiry>Get started</button>
+      </nav>
+
+      <button
+        class="menu-btn"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </header>
-  <nav class="drawer" id="mobile-menu" aria-label="Mobile navigation"><a href="#solutions">Solutions <span>→</span></a><a href="#packages">Packages <span>→</span></a><a href="#why">Why Northstone <span>→</span></a><a href="#contact">Contact <span>→</span></a><button class="btn drawer-cta" data-open-enquiry>Start an enquiry</button><div class="drawer-contact"><a href="tel:+27731080298">Call 073 108 0298</a><a href="https://wa.me/27731080298">Chat on WhatsApp</a></div></nav>
+
+  <nav class="drawer" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#solutions">Solutions <span>→</span></a>
+    <a href="#packages">Packages <span>→</span></a>
+    <a href="#why">Why Northstone <span>→</span></a>
+    <a href="#contact">Contact <span>→</span></a>
+
+    <button class="btn btn-primary drawer-cta" data-open-enquiry>
+      Start an enquiry
+    </button>
+
+    <div class="drawer-contact">
+      <a href="tel:+27731080298">Call 073 108 0298</a>
+      <a href="https://wa.me/27731080298">Chat on WhatsApp</a>
+    </div>
+  </nav>
 
   <main id="main">
-    <section class="hero" id="top"><div class="container hero-inner"><div><div class="eyebrow light">Finance support for growing businesses</div><h1>Clearer numbers.<br><span>Confident decisions.</span></h1><p class="hero-copy">Practical bookkeeping, reporting, forecasting and financial guidance—without the cost of a full-time finance team.</p><div class="hero-actions"><button class="btn btn-primary" data-open-enquiry>Get started <span>→</span></button><a class="btn btn-secondary" href="#solutions">Explore services</a></div><div class="hero-meta"><span><i></i> Startups, SMEs & growing businesses</span><span><i></i> Xero support</span></div></div><aside class="insight-card" aria-label="Illustrative financial reporting dashboard"><div class="insight-top"><div><strong>Monthly overview</strong><br><span>Clear reporting, without the clutter</span></div><span>Business view</span></div><div class="chart" aria-hidden="true"><i style="height:38%"></i><i style="height:52%"></i><i style="height:47%"></i><i style="height:68%"></i><i style="height:83%"></i><i style="height:76%"></i></div><div class="insight-row"><span>Financial visibility</span><strong>Improving</strong></div></aside></div></section>
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div>
+          <div class="eyebrow light">
+            Finance support for growing businesses
+          </div>
 
-    <section class="services" id="solutions"><div class="container"><div class="section-head"><div class="eyebrow">Finance solutions</div><h2>Support shaped around where your business is now.</h2><p>Choose the area that sounds closest to what you need. We can tailor the final scope to your business size, transaction volume and reporting requirements.</p></div><div class="service-track" aria-label="Finance solutions"><article class="service-card"><span class="service-num">01 / Monthly support</span><h3>Keep your finances dependable.</h3><p>Reliable monthly finance administration and useful reporting, so you know where your business stands.</p><ul><li>Accounting & bookkeeping</li><li>Management reporting</li><li>Payroll & compliance support</li></ul><a class="service-link" href="#contact">Enquire about this →</a></article><article class="service-card"><span class="service-num">02 / Xero & systems</span><h3>Build a cleaner finance function.</h3><p>Set up, repair or improve the systems behind your reporting and everyday finance work.</p><ul><li>Xero setup & conversion</li><li>Historical cleanup</li><li>Process improvement</li></ul><a class="service-link" href="#contact">Enquire about this →</a></article><article class="service-card"><span class="service-num">03 / Planning & leadership</span><h3>Make better-informed decisions.</h3><p>Forward-looking support for cash flow, budgeting and stronger financial oversight.</p><ul><li>Cash-flow planning</li><li>Forecasting & budgeting</li><li>Virtual Financial Manager</li></ul><a class="service-link" href="#contact">Enquire about this →</a></article></div><div class="swipe-note">Swipe to explore all solutions →</div></div></section>
+          <h1>Clearer numbers.<br><span>Confident decisions.</span></h1>
 
-    <section class="why" id="why"><div class="container why-grid"><div class="why-copy"><div class="eyebrow">Why Northstone</div><h2>Finance that helps you see the business clearly.</h2><p>Northstone combines dependable monthly structure with practical, business-focused insight. The result is better visibility, stronger control and support that can grow with you.</p></div><div class="benefits"><article class="benefit"><span class="benefit-icon">01</span><div><h3>Structured and reliable</h3><p>Consistent finance records and reporting you can rely on.</p></div></article><article class="benefit"><span class="benefit-icon">02</span><div><h3>Practical, not complicated</h3><p>Clear commentary that helps you understand performance and trends.</p></div></article><article class="benefit"><span class="benefit-icon">03</span><div><h3>Built to scale</h3><p>From bookkeeping support to ongoing financial leadership.</p></div></article></div></div></section>
+          <p class="hero-copy">
+            Practical bookkeeping, reporting, forecasting and financial
+            guidance—without the cost of a full-time finance team.
+          </p>
 
-    <section class="process"><div class="container"><div class="section-head"><div class="eyebrow light">How it works</div><h2>A clearer next step in three simple stages.</h2><p>You do not need to diagnose the exact service yourself. Start with what is happening in your business and we will assess the appropriate level of support.</p></div><div class="steps"><article class="step"><span class="step-num">1</span><h3>Tell us what you need</h3><p>Send a short enquiry or start a WhatsApp conversation.</p></article><article class="step"><span class="step-num">2</span><h3>We assess your requirements</h3><p>We consider your business size, volume and reporting needs.</p></article><article class="step"><span class="step-num">3</span><h3>Get the right scope</h3><p>Receive a recommended solution, pricing and clear next steps.</p></article></div></div></section>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-open-enquiry>
+              Get started <span>→</span>
+            </button>
 
-    <section class="packages" id="packages"><div class="container"><div class="section-head"><div class="eyebrow">Monthly packages</div><h2>Start with the level of support that fits.</h2><p>Final scope and pricing are tailored to your business size, transaction volume and reporting needs.</p></div><div class="package-grid"><article class="package"><h3>Starter</h3><p class="best">For startups and small businesses</p><div class="price">R4,500 <small>/ month, from</small></div><ul><li>Bookkeeping, ±75 transactions</li><li>Bank reconciliations</li><li>Basic monthly P&amp;L</li><li>Xero maintenance</li><li>Email support</li></ul><button class="btn" data-open-enquiry>Ask about Starter</button></article><article class="package featured"><span class="popular">Most popular</span><h3>Growth</h3><p class="best">For growing businesses</p><div class="price">R7,500 <small>/ month, from</small></div><ul><li>Everything in Starter</li><li>75–200 transactions</li><li>Monthly management reports</li><li>Debtors &amp; creditors tracking</li><li>Monthly review call</li><li>KPI tracking</li></ul><button class="btn" data-open-enquiry>Ask about Growth</button></article><article class="package"><h3>Advanced</h3><p class="best">For established or scaling businesses</p><div class="price">Custom quote</div><ul><li>Everything in Growth</li><li>200+ transactions</li><li>Forecasting</li><li>Budget vs actual analysis</li><li>Strategic financial input</li><li>Custom reporting</li></ul><button class="btn" data-open-enquiry>Discuss Advanced</button></article><article class="package"><h3>Virtual Financial Manager</h3><p class="best">For financial oversight and leadership</p><div class="price">Custom quote</div><ul><li>Full financial oversight</li><li>Monthly management accounts</li><li>Forecasting &amp; budgeting</li><li>Strategic input &amp; meetings</li><li>Process improvement</li></ul><button class="btn" data-open-enquiry>Discuss this service</button></article></div></div></section>
+            <a class="btn btn-secondary" href="#solutions">
+              Explore services
+            </a>
+          </div>
 
-    <section class="trust"><div class="container trust-grid"><div><div class="eyebrow">Professional support</div><h2>Clarity, control and confidence as you grow.</h2><p>Built for startups, small businesses and growing SMEs that need a more dependable finance function—without adding a full-time finance team.</p></div><div class="trust-panel"><div class="trust-item"><strong>Monthly visibility</strong><span>Understand cash flow, profitability and key trends.</span></div><div class="trust-item"><strong>Better financial control</strong><span>Keep core records and processes organised and dependable.</span></div><div class="trust-item"><strong>Support across growth stages</strong><span>Move from essential monthly work to strategic input when needed.</span></div></div></div></section>
+          <div class="hero-meta">
+            <span><i></i> Startups, SMEs &amp; growing businesses</span>
+            <span><i></i> Xero support</span>
+          </div>
+        </div>
 
-    <section class="contact" id="contact"><div class="container"><div class="contact-card"><div class="eyebrow light">Ready for more clarity?</div><h2>Let’s talk about your business.</h2><p>Tell us what you need help with. Northstone Finance Advisory typically responds within 24 hours.</p><div class="contact-actions"><button class="btn btn-primary" data-open-enquiry>Start an enquiry →</button><a class="btn btn-secondary" href="https://wa.me/27731080298">Chat on WhatsApp</a></div><div class="contact-details"><a href="tel:+27731080298">☎ 073 108 0298</a><a href="mailto:info@northstonefinance.co.za">✉ info@northstonefinance.co.za</a><span>⌖ Cape Town, South Africa</span></div></div></div></section>
+        <aside
+          class="insight-card"
+          aria-label="Illustrative financial reporting dashboard"
+        >
+          <div class="insight-top">
+            <div>
+              <strong>Monthly overview</strong><br>
+              <span>Clear reporting, without the clutter</span>
+            </div>
+            <span>Business view</span>
+          </div>
+
+          <div class="chart" aria-hidden="true">
+            <i style="height: 38%"></i>
+            <i style="height: 52%"></i>
+            <i style="height: 47%"></i>
+            <i style="height: 68%"></i>
+            <i style="height: 83%"></i>
+            <i style="height: 76%"></i>
+          </div>
+
+          <div class="insight-row">
+            <span>Financial visibility</span>
+            <strong>Improving</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Finance solutions</div>
+
+          <h2>Support shaped around where your business is now.</h2>
+
+          <p>
+            Choose the area closest to what you need. We can tailor the final
+            scope to your business size, transaction volume and reporting
+            requirements.
+          </p>
+        </div>
+
+        <div class="service-track">
+          <article class="service-card">
+            <span class="service-num">01 / Monthly support</span>
+
+            <h3>Keep your finances dependable.</h3>
+
+            <p>
+              Reliable monthly finance administration and useful reporting, so
+              you know where your business stands.
+            </p>
+
+            <ul>
+              <li>Accounting and bookkeeping</li>
+              <li>Management reporting</li>
+              <li>Payroll and compliance support</li>
+            </ul>
+
+            <a class="service-link" href="#contact">
+              Enquire about this →
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-num">02 / Xero &amp; systems</span>
+
+            <h3>Build a cleaner finance function.</h3>
+
+            <p>
+              Set up, repair or improve the systems behind your reporting and
+              everyday finance work.
+            </p>
+
+            <ul>
+              <li>Xero setup and conversion</li>
+              <li>Historical cleanup</li>
+              <li>Process improvement</li>
+            </ul>
+
+            <a class="service-link" href="#contact">
+              Enquire about this →
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-num">03 / Planning &amp; leadership</span>
+
+            <h3>Make better-informed decisions.</h3>
+
+            <p>
+              Forward-looking support for cash flow, budgeting and stronger
+              financial oversight.
+            </p>
+
+            <ul>
+              <li>Cash-flow planning</li>
+              <li>Forecasting and budgeting</li>
+              <li>Virtual Financial Manager</li>
+            </ul>
+
+            <a class="service-link" href="#contact">
+              Enquire about this →
+            </a>
+          </article>
+        </div>
+
+        <div class="swipe-note">Swipe to explore all solutions →</div>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="container why-grid">
+        <div class="why-copy">
+          <div class="eyebrow">Why Northstone</div>
+
+          <h2>Finance that helps you see the business clearly.</h2>
+
+          <p>
+            Northstone combines dependable monthly structure with practical,
+            business-focused insight. The result is better visibility, stronger
+            control and support that can grow with you.
+          </p>
+        </div>
+
+        <div class="benefits">
+          <article class="benefit">
+            <span class="benefit-icon">01</span>
+            <div>
+              <h3>Structured and reliable</h3>
+              <p>Consistent finance records and reporting you can rely on.</p>
+            </div>
+          </article>
+
+          <article class="benefit">
+            <span class="benefit-icon">02</span>
+            <div>
+              <h3>Practical, not complicated</h3>
+              <p>
+                Clear commentary that helps you understand performance and
+                trends.
+              </p>
+            </div>
+          </article>
+
+          <article class="benefit">
+            <span class="benefit-icon">03</span>
+            <div>
+              <h3>Built to scale</h3>
+              <p>
+                From bookkeeping support to ongoing financial leadership.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow light">How it works</div>
+
+          <h2>A clearer next step in three simple stages.</h2>
+
+          <p>
+            You do not need to diagnose the exact service yourself. Start with
+            what is happening in your business and we will assess the
+            appropriate level of support.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span class="step-num">1</span>
+            <h3>Tell us what you need</h3>
+            <p>Send a short enquiry or start a WhatsApp conversation.</p>
+          </article>
+
+          <article class="step">
+            <span class="step-num">2</span>
+            <h3>We assess your requirements</h3>
+            <p>
+              We consider your business size, volume and reporting needs.
+            </p>
+          </article>
+
+          <article class="step">
+            <span class="step-num">3</span>
+            <h3>Get the right scope</h3>
+            <p>
+              Receive a recommended solution, pricing and clear next steps.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Monthly packages</div>
+
+          <h2>Start with the level of support that fits.</h2>
+
+          <p>
+            Final scope and pricing are tailored to your business size,
+            transaction volume and reporting needs.
+          </p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package">
+            <h3>Starter</h3>
+            <p class="best">For startups and small businesses</p>
+
+            <div class="price">
+              R4,500 <small>/ month, from</small>
+            </div>
+
+            <ul>
+              <li>Bookkeeping, approximately 75 transactions</li>
+              <li>Bank reconciliations</li>
+              <li>Basic monthly P&amp;L</li>
+              <li>Xero maintenance</li>
+              <li>Email support</li>
+            </ul>
+
+            <button class="btn" data-open-enquiry>Ask about Starter</button>
+          </article>
+
+          <article class="package featured">
+            <span class="popular">Most popular</span>
+
+            <h3>Growth</h3>
+            <p class="best">For growing businesses</p>
+
+            <div class="price">
+              R7,500 <small>/ month, from</small>
+            </div>
+
+            <ul>
+              <li>Everything in Starter</li>
+              <li>75–200 transactions</li>
+              <li>Monthly management reports</li>
+              <li>Debtors and creditors tracking</li>
+              <li>Monthly review call</li>
+              <li>KPI tracking</li>
+            </ul>
+
+            <button class="btn" data-open-enquiry>Ask about Growth</button>
+          </article>
+
+          <article class="package">
+            <h3>Advanced</h3>
+            <p class="best">For established or scaling businesses</p>
+
+            <div class="price">Custom quote</div>
+
+            <ul>
+              <li>Everything in Growth</li>
+              <li>200+ transactions</li>
+              <li>Forecasting</li>
+              <li>Budget versus actual analysis</li>
+              <li>Strategic financial input</li>
+              <li>Custom reporting</li>
+            </ul>
+
+            <button class="btn" data-open-enquiry>
+              Discuss Advanced
+            </button>
+          </article>
+
+          <article class="package">
+            <h3>Virtual Financial Manager</h3>
+            <p class="best">For financial oversight and leadership</p>
+
+            <div class="price">Custom quote</div>
+
+            <ul>
+              <li>Full financial oversight</li>
+              <li>Monthly management accounts</li>
+              <li>Forecasting and budgeting</li>
+              <li>Strategic input and meetings</li>
+              <li>Process improvement</li>
+            </ul>
+
+            <button class="btn" data-open-enquiry>
+              Discuss this service
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust-grid">
+        <div>
+          <div class="eyebrow">Professional support</div>
+
+          <h2>Clarity, control and confidence as you grow.</h2>
+
+          <p>
+            Built for startups, small businesses and growing SMEs that need a
+            more dependable finance function—without adding a full-time finance
+            team.
+          </p>
+        </div>
+
+        <div class="trust-panel">
+          <div class="trust-item">
+            <strong>Monthly visibility</strong>
+            <span>Understand cash flow, profitability and key trends.</span>
+          </div>
+
+          <div class="trust-item">
+            <strong>Better financial control</strong>
+            <span>
+              Keep core records and processes organised and dependable.
+            </span>
+          </div>
+
+          <div class="trust-item">
+            <strong>Support across growth stages</strong>
+            <span>
+              Move from essential monthly work to strategic input when needed.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="eyebrow light">Ready for more clarity?</div>
+
+          <h2>Let’s talk about your business.</h2>
+
+          <p>
+            Tell us what you need help with. Northstone Finance Advisory
+            typically responds within 24 hours.
+          </p>
+
+          <div class="contact-actions">
+            <button class="btn btn-primary" data-open-enquiry>
+              Start an enquiry →
+            </button>
+
+            <a class="btn btn-secondary" href="https://wa.me/27731080298">
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-details">
+            <a href="tel:+27731080298">☎ 073 108 0298</a>
+
+            <a href="mailto:info@northstonefinance.co.za">
+              ✉ info@northstonefinance.co.za
+            </a>
+
+            <span>⌖ Cape Town, South Africa</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer><div class="container footer-grid"><div class="footer-brand"><img src="logo.png" alt="Northstone Finance Advisory" width="175" height="54"><p>Practical finance support for startups, SMEs and growing businesses seeking better visibility, stronger control and clearer financial decisions.</p></div><div class="footer-links"><div><strong>Explore</strong><a href="#solutions">Solutions</a><a href="#packages">Packages</a><a href="#why">Why Northstone</a><a href="#contact">Contact</a></div><div><strong>Contact</strong><a href="tel:+27731080298">073 108 0298</a><a href="mailto:info@northstonefinance.co.za">Email us</a><a href="https://wa.me/27731080298">WhatsApp</a></div></div><div class="legal">© 2026 Northstone Finance Advisory. All rights reserved. Regulatory, privacy and company information to be added once verified.</div></div></footer>
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img
+          src="logo.png"
+          alt="Northstone Finance Advisory"
+          width="210"
+          height="66"
+        >
 
-  <div class="mobile-bar" aria-label="Quick contact actions"><a href="tel:+27731080298">Call</a><a href="https://wa.me/27731080298">WhatsApp</a><button class="accent" data-open-enquiry>Enquire</button></div>
+        <p>
+          Practical finance support for startups, SMEs and growing businesses
+          seeking better visibility, stronger control and clearer financial
+          decisions.
+        </p>
+      </div>
 
-  <div class="modal" id="enquiry-modal" role="dialog" aria-modal="true" aria-labelledby="enquiry-title"><div class="modal-sheet"><div class="modal-head"><div><div class="eyebrow">Quick enquiry</div><h2 id="enquiry-title">How can Northstone help?</h2></div><button class="close" aria-label="Close enquiry">×</button></div><div class="progress" aria-label="Form progress"><span></span></div><form id="enquiry-form" novalidate><div class="form-step active" data-step="1"><div class="field"><label for="help">What do you need help with?</label><select id="help" name="help" required><option value="">Choose an option</option><option>Monthly accounting & bookkeeping</option><option>Xero setup, cleanup & support</option><option>Management reporting</option><option>Cash-flow planning</option><option>Payroll & compliance support</option><option>Virtual Financial Manager</option><option>Not sure yet</option></select></div><div class="field"><label for="business">Business name <span class="field-note">(optional)</span></label><input id="business" name="business" autocomplete="organization"></div><div class="form-actions"><button type="button" class="btn btn-primary" id="next-step">Continue →</button></div></div><div class="form-step" data-step="2"><div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="contact-detail">Email or mobile number</label><input id="contact-detail" name="contact" inputmode="email" autocomplete="email" required><div class="field-note">Northstone will use this only to respond to your enquiry.</div></div><div class="field"><label for="message">Anything else we should know? <span class="field-note">(optional)</span></label><textarea id="message" name="message"></textarea></div><div class="form-actions"><button type="button" class="btn btn-light" id="back-step">Back</button><button type="submit" class="btn btn-primary">Send enquiry</button></div></div></form><div class="success"><div class="success-mark">✓</div><h3>Your enquiry is ready.</h3><p>This design preview does not send live enquiries yet. The production form endpoint will be connected before launch.</p><button class="btn btn-primary close-success">Done</button></div></div></div>
+      <div class="footer-links">
+        <div>
+          <strong>Explore</strong>
+          <a href="#solutions">Solutions</a>
+          <a href="#packages">Packages</a>
+          <a href="#why">Why Northstone</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+          <strong>Contact</strong>
+          <a href="tel:+27731080298">073 108 0298</a>
+          <a href="mailto:info@northstonefinance.co.za">Email us</a>
+          <a href="https://wa.me/27731080298">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="legal">
+        © 2026 Northstone Finance Advisory. All rights reserved. Regulatory,
+        privacy and company information to be added once verified.
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" aria-label="Quick contact actions">
+    <a href="tel:+27731080298">Call</a>
+    <a href="https://wa.me/27731080298">WhatsApp</a>
+    <button class="accent" data-open-enquiry>Enquire</button>
+  </div>
+
+  <div
+    class="modal"
+    id="enquiry-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="enquiry-title"
+  >
+    <div class="modal-sheet">
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow">Quick enquiry</div>
+          <h2 id="enquiry-title">How can Northstone help?</h2>
+        </div>
+
+        <button class="close" aria-label="Close enquiry">×</button>
+      </div>
+
+      <div class="progress" aria-label="Form progress">
+        <span></span>
+      </div>
+
+      <form id="enquiry-form" novalidate>
+        <div class="form-step active" data-step="1">
+          <div class="field">
+            <label for="help">What do you need help with?</label>
+
+            <select id="help" name="help" required>
+              <option value="">Choose an option</option>
+              <option>Monthly accounting and bookkeeping</option>
+              <option>Xero setup, cleanup and support</option>
+              <option>Management reporting</option>
+              <option>Cash-flow planning</option>
+              <option>Payroll and compliance support</option>
+              <option>Virtual Financial Manager</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="business">Business name (optional)</label>
+            <input
+              id="business"
+              name="business"
+              autocomplete="organization"
+            >
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" id="next-step">
+              Continue →
+            </button>
+          </div>
+        </div>
+
+        <div class="form-step" data-step="2">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="contact-detail">Email or mobile number</label>
+
+            <input
+              id="contact-detail"
+              name="contact"
+              autocomplete="email"
+              required
+            >
+
+            <div class="field-note">
+              Northstone will use this only to respond to your enquiry.
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-light" id="back-step">
+              Back
+            </button>
+
+            <button type="submit" class="btn btn-primary">
+              Send enquiry
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="success">
+        <div class="success-mark">✓</div>
+
+        <h3>Your enquiry is ready.</h3>
+
+        <p>
+          This design preview does not send live enquiries yet. The production
+          form endpoint will be connected before launch.
+        </p>
+
+        <button class="btn btn-primary close-success">Done</button>
+      </div>
+    </div>
+  </div>
+
   <script>
-    const body=document.body,menuButton=document.querySelector('.menu-btn'),drawer=document.querySelector('.drawer'),modal=document.querySelector('.modal'),form=document.querySelector('#enquiry-form'),progress=document.querySelector('.progress span');
-    const setMenu=open=>{drawer.classList.toggle('open',open);body.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation')};
-    menuButton.addEventListener('click',()=>setMenu(!drawer.classList.contains('open')));drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
-    const openModal=()=>{setMenu(false);modal.classList.add('open');body.classList.add('modal-open');setTimeout(()=>document.querySelector('#help').focus(),30)};
-    const closeModal=()=>{modal.classList.remove('open');body.classList.remove('modal-open')};
-    document.querySelectorAll('[data-open-enquiry]').forEach(b=>b.addEventListener('click',openModal));document.querySelector('.close').addEventListener('click',closeModal);document.querySelector('.close-success').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
-    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();setMenu(false)}});
-    const showStep=n=>{document.querySelectorAll('.form-step').forEach(s=>s.classList.toggle('active',s.dataset.step===String(n)));progress.style.width=n===1?'50%':'100%'};
-    document.querySelector('#next-step').addEventListener('click',()=>{const help=document.querySelector('#help');if(!help.reportValidity())return;showStep(2);document.querySelector('#name').focus()});document.querySelector('#back-step').addEventListener('click',()=>showStep(1));
-    form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;form.style.display='none';document.querySelector('.progress').style.display='none';document.querySelector('.success').classList.add('show')});
+    const body = document.body;
+    const menuButton = document.querySelector(".menu-btn");
+    const drawer = document.querySelector(".drawer");
+    const modal = document.querySelector(".modal");
+    const form = document.querySelector("#enquiry-form");
+    const progress = document.querySelector(".progress span");
+
+    function setMenu(open) {
+      drawer.classList.toggle("open", open);
+      body.classList.toggle("menu-open", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute(
+        "aria-label",
+        open ? "Close navigation" : "Open navigation"
+      );
+    }
+
+    function openModal() {
+      setMenu(false);
+      modal.classList.add("open");
+      body.classList.add("modal-open");
+
+      setTimeout(() => {
+        document.querySelector("#help").focus();
+      }, 30);
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+      body.classList.remove("modal-open");
+    }
+
+    function showStep(stepNumber) {
+      document.querySelectorAll(".form-step").forEach((step) => {
+        step.classList.toggle(
+          "active",
+          step.dataset.step === String(stepNumber)
+        );
+      });
+
+      progress.style.width = stepNumber === 1 ? "50%" : "100%";
+    }
+
+    menuButton.addEventListener("click", () => {
+      setMenu(!drawer.classList.contains("open"));
+    });
+
+    drawer.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMenu(false));
+    });
+
+    document.querySelectorAll("[data-open-enquiry]").forEach((button) => {
+      button.addEventListener("click", openModal);
+    });
+
+    document.querySelector(".close").addEventListener("click", closeModal);
+    document
+      .querySelector(".close-success")
+      .addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+        setMenu(false);
+      }
+    });
+
+    document.querySelector("#next-step").addEventListener("click", () => {
+      const help = document.querySelector("#help");
+
+      if (!help.reportValidity()) {
+        return;
+      }
+
+      showStep(2);
+      document.querySelector("#name").focus();
+    });
+
+    document.querySelector("#back-step").addEventListener("click", () => {
+      showStep(1);
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      form.style.display = "none";
+      document.querySelector(".progress").style.display = "none";
+      document.querySelector(".success").classList.add("show");
+    });
   </script>
 </body>
 </html>
